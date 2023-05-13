@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bombs Game</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="../eel.js"></script>
+    <script type = "module" src="../scipts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="center">
+        <p class="title">Bombs Game</p>
+    </div>
+    <div class="center">
+        <main>
+            <section class="your_stats">
+                <p class="ys_money">Balance: 1000</p>
+                <p class="ys_win">You Win: 0</p>
+            </section>
+            <div class = "game_start">
+                <input type="text" class="bet_input" placeholder="Input Your Bet" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                <button class="start_game">Start</button>
+            </div>
+
+            <section class="game_section">
+                <div class="center">
+                    <p class="title game_title">Game</p>
+                </div>
+
+                <div class="bomb_string">
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                </div>
+                <div class="bomb_string">
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                </div>
+                <div class="bomb_string">
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                </div>
+                <div class="bomb_string">
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                </div>
+                <div class="bomb_string">
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                    <div class="bomb"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

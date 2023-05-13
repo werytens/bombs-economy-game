@@ -1,0 +1,128 @@
+:root {
+    --back: #313338;
+    --title: #BAAFFF;
+    --menus: #1E1F22;
+    --submenus: #2D2D2D;
+    --text-first: #CBD6D6;
+    --text-second: #949494;
+    --hover-color1: #9281FF;
+
+    --br: 0.3vh;
+}
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background: var(--back);
+}
+
+main {
+    position: absolute;
+
+    background: var(--menus);
+
+    padding: 2vh;
+
+    border-radius: calc(var(--br) * 2);
+
+    width: 80%;
+    min-height: 95%;
+
+    color: var(--text-first);
+}
+
+main {
+    max-width: 400px;
+}
+
+input, button {
+    outline: none;
+    border: 0;
+
+    padding: 0.6vh;
+
+    background: var(--submenus);
+    color: var(--text-first);
+
+    border-radius: var(--br);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: var(--title);
+
+    margin-bottom: 1vh;
+
+    text-transform: uppercase;
+}
+
+.your_stats {
+    margin-bottom: 1vh;
+}
+
+.game_section {
+    margin-top: 10vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 2vh;
+} 
+.bomb_string {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+} 
+
+.bomb {
+    height: 30px;
+    width: 30px;
+
+    border-radius: var(--br);
+
+    background: rgb(141, 226, 141);
+}
+
+.bomb:hover{
+    background: rgb(248, 203, 119);
+
+    transition: 0.3s;
+}
+
+.game_title {
+    position: relative;
+
+    margin-bottom: 3vh;
+}
+
+.game_title:hover::after {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    background: black;
+
+    content: "Вы начинаете игру вписав начальную ставку в поле сверху. После начала нужно нажимать на кнопки снизу, если вам повезло - баланс умножается в пять раз, если нет - обнуляется.//";
+
+    padding: 0.3vh;
+
+    border-radius: var(--br);
+
+    font-size: 1.2vh;
+    color: var(--text-first);
+}
+
+.start_game:hover {
+    color: var(--hover-color1);
+}
