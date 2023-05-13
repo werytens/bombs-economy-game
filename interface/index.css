@@ -123,6 +123,6 @@ input, button {
     color: var(--text-first);
 }
 
-.start_game:hover {
+.start_game:hover, .finish_game:hover {
     color: var(--hover-color1);
 }

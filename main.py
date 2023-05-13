@@ -14,7 +14,6 @@ if (cursor.execute("SELECT balance FROM Balance").fetchall() == []):
     cursor.execute(f"INSERT INTO Balance VALUES (1000)")
     connection.commit()
 
-# cursor.execute(f"UPDATE Balance SET balance = 10000")
 
 @eel.expose()
 def startgame():
@@ -24,5 +23,10 @@ def startgame():
 def getnowbalance():
     return int(cursor.execute("SELECT balance FROM Balance").fetchall()[0][0])
 
+@eel.expose()
+def setnewbalance(balance):
+    cursor.execute(f"UPDATE Balance SET balance = {balance}")
+    connection.commit()
+
 eel.init("K:/Main/bombs-economy-game")
-eel.start("./interface/index.html", size = (400, 700))
+eel.start("./interface/index.html", size = (500, 800))

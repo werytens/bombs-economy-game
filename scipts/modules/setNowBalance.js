@@ -12,3 +12,4 @@ export function setNowBalance() {
         document.querySelector(".ys_money").innerHTML = 'Balance: ' + (yield eel.getnowbalance()());
     });
 }
+//# sourceMappingURL=setNowBalance.js.map

@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES6",
         "removeComments": true,
-        "sourceMap": false,
+        "sourceMap": true,
         "watch": true
     }
 }
