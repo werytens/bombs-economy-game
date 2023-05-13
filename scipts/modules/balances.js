@@ -12,4 +12,7 @@ export function setNowBalance() {
         document.querySelector(".ys_money").innerHTML = 'Balance: ' + (yield eel.getnowbalance()());
     });
 }
-//# sourceMappingURL=setNowBalance.js.map
+export function drawWinMoney(balance) {
+    document.querySelector(".ys_win").innerHTML = `You Win: ${balance}`;
+}
+//# sourceMappingURL=balances.js.map

@@ -8,8 +8,6 @@ cursor = connection.cursor()
 
 cursor.execute("CREATE TABLE IF NOT EXISTS Balance (balance int)")
 
-print(cursor.execute("SELECT balance FROM Balance").fetchall()[0][0])
-
 if (cursor.execute("SELECT balance FROM Balance").fetchall() == []):
     cursor.execute(f"INSERT INTO Balance VALUES (1000)")
     connection.commit()

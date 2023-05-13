@@ -103,21 +103,26 @@ input, button {
     position: relative;
 
     margin-bottom: 3vh;
+
+    cursor: pointer;
 }
 
 .game_title:hover::after {
     position: absolute;
 
-    top: 0;
+    top: -25%;
     left: 0;
+    transform: translate(0, 50%);
 
     background: black;
 
-    content: "Вы начинаете игру вписав начальную ставку в поле сверху. После начала нужно нажимать на кнопки снизу, если вам повезло - баланс умножается в пять раз, если нет - обнуляется.//";
+    content: "Вы начинаете игру вписав начальную ставку в поле сверху. После начала нужно нажимать на кнопки ('бомбочки') снизу, если вам повезло - баланс умножается в пять раз, если нет - обнуляется.";
 
     padding: 0.3vh;
 
     border-radius: var(--br);
+
+    width: 200px;
 
     font-size: 1.2vh;
     color: var(--text-first);
