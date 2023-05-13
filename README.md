@@ -1,6 +1,7 @@
+<div align = "center">
+
 # Description
 An economic game where the main functionality is clicking bombs.
-
 If you choose the right bomb - your bet is multiplied by 5, if not - you lose.
 
 
@@ -13,4 +14,6 @@ If you choose the right bomb - your bet is multiplied by 5, if not - you lose.
 
 
 # Image
-<div align = "center"><image src = "./interface/img/game-image.png"></div>
+<image src = "./interface/img/game-image.png">
+
+</div>
