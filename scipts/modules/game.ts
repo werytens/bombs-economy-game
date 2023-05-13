@@ -10,7 +10,7 @@ export async function gameStart() {
     let arrayOfCells: number[] = await eel.startgame()();
     let userBet: string = document.querySelector<HTMLInputElement>(".bet_input").value;
 
-    if (Number(document.querySelector<HTMLInputElement>(".bet_input").value) > 0 && Number(document.querySelector<HTMLInputElement>(".bet_input").value) < Number(document.querySelector(".ys_money").innerHTML.split(": ")[1])) {
+    if (Number(document.querySelector<HTMLInputElement>(".bet_input").value) > 0 && Number(document.querySelector<HTMLInputElement>(".bet_input").value) <= Number(document.querySelector(".ys_money").innerHTML.split(": ")[1])) {
         gameStartButton.style.color = "red";
                 
         allCells.forEach((element, index) => element.addEventListener("click", async () => {

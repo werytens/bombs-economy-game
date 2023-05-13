@@ -16,7 +16,7 @@ export function gameStart() {
         let allCells = document.querySelectorAll(".bomb");
         let arrayOfCells = yield eel.startgame()();
         let userBet = document.querySelector(".bet_input").value;
-        if (Number(document.querySelector(".bet_input").value) > 0 && Number(document.querySelector(".bet_input").value) < Number(document.querySelector(".ys_money").innerHTML.split(": ")[1])) {
+        if (Number(document.querySelector(".bet_input").value) > 0 && Number(document.querySelector(".bet_input").value) <= Number(document.querySelector(".ys_money").innerHTML.split(": ")[1])) {
             gameStartButton.style.color = "red";
             allCells.forEach((element, index) => element.addEventListener("click", () => __awaiter(this, void 0, void 0, function* () {
                 if (arrayOfCells[index] == 1) {
