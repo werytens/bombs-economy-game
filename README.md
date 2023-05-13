@@ -13,4 +13,4 @@ If you choose the right bomb - your bet is multiplied by 5, if not - you lose.
 
 
 # Image
-<image src = "./interface/img/game-image.png">
+<div align = "center"><image src = "./interface/img/game-image.png"></div>
